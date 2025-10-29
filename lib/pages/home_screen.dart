@@ -16,6 +16,23 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Text('RestApi', style: TextStyle(color: Colors.white)),
         centerTitle: true,
       ),
+      body: SingleChildScrollView(
+        padding: EdgeInsets.all(20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text('data', style: TextStyle(fontSize: 20)),
+            SizedBox(height: 10),
+            ElevatedButton(
+              onPressed: () {},
+              child: Text(
+                'Get',
+                style: TextStyle(color: Colors.blue, fontSize: 20),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
